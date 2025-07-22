@@ -48,7 +48,6 @@
 ## 4. Scaling the GET /highest-discount Endpoint
 - For 1,000 requests per second:
   - Use a production-grade database (e.g., PostgreSQL) with proper indexing on `bankName` and `paymentInstruments`.
-  - Deploy with a performant ASGI server (e.g., Uvicorn with Gunicorn workers).
   - Add caching (e.g., Redis) for frequently requested scenarios.
   - Use connection pooling and optimize queries.
 
@@ -58,6 +57,4 @@
 - Add authentication and rate limiting.
 - Improve error handling and input validation.
 - Add support for more complex offer rules and expiry dates.
-- Use Alembic for migrations.
 - Add OpenAPI docs and more comprehensive tests.
-- Containerize with Docker for easier deployment. 
